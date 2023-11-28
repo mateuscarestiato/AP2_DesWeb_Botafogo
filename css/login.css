@@ -1,0 +1,66 @@
+body {
+  font-family: 'fantasy';
+    background-image: url ("https://i0.wp.com/prdnetshoes.wpcomstaging.com/wp-content/uploads/2022/02/botafogo20220111.png?fit=1256%2C500&ssl=1");
+    background-color: rgb(100, 100, 100); 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h2 {
+    color: yellow;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin: 8px;
+    color: #000;
+  }
+
+  input {
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    background-color: #333; /* Cor de fundo para campos de entrada */
+    color: yellow; /* Cor do texto para campos de entrada */
+    border: 2px solid #555; /* Cor da borda para campos de entrada */
+  }
+
+  button {
+    background-color: #fff; /* Cor de fundo branca para o botão */
+    color: #000; /* Cor do texto preta para o botão */
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: yellow;
+  }
+
+  /* Adiciona uma borda vermelha ao campo de senha quando a senha é incorreta */
+  input:invalid {
+    border: 1px solid red;
+  }
+
+  /* Adiciona estilo à mensagem de erro */
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+ #containerlogin{
+    display: gird;
+    grid-template-columns: auto;
+ }
+
+@media screen and (min-width: 768px) {
+  #containerlogin{
+      grid-template-rows: auto;
+  }
+}
+
